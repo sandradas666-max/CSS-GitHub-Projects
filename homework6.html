@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework6</title>
+    <style>
+        
+        img[src$=".avif"]{
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+                        }
+        a[href^="https"]{
+         color:red;
+                        }
+        img{
+            width:100%;
+            height:auto;
+
+        }
+        
+        @media (max-width: 600px) {
+        h2 {
+          font-size: 20px;
+        }
+        .blog{
+            flex-direction: column;
+        }
+                                 }
+        @media (orientation: portrait) {
+        section {
+          background-color: lightyellow;
+        }
+      }
+      .blog{
+        display:flex;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Featured Blogs</h1>
+      <div class="blog">
+        <h2>Benefits of Exercise</h2>
+        <img
+          src="https://media.istockphoto.com/id/1912106674/photo/flexible-exercises-for-body-sporty-man-and-woman-with-grey-hair-stretching-on-yoga-mats-with.jpg?s=612x612&w=0&k=20&c=lAyntRQ_LdY9fCMY93Pet76HpACGrotrvD0p89JTkJo="
+          alt="excersice"
+        />
+        <br><br>
+        <a href="https://musclewiki.com/"> Do Exercise</a>
+      </div>
+
+      <div class="blog">
+        <h2>Healthy Food Tips</h2>
+        <img src="healthy-food.avif" alt="healthy_food">
+        <br><br>
+        <a href="https://www.healthyfood.com/">Healthy foods</a>
+      </div>
+    </section>
+  </body>
+</html>
