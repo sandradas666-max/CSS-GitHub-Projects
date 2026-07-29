@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>classwork6</title>
+    <style>
+      body {
+        
+        margin: 50px;
+        
+      }
+      .img {
+        border: 2px solid black;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .card {
+        width: 300px;
+        border: 1px solid black;
+        padding: 20px;
+        text-align: center;
+        margin:auto;
+      }
+      @media (max-width: 600px) {
+        h2 {
+          font-size: 20px;
+        }
+        .card {
+          text-align: center;
+        }
+      }
+      @media (orientation: landscape) {
+        .card {
+          background-color: lightblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        class="img"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrgeT3q5H_n2t50BBlpwLYd3qT4LMlfXMyEkqEuJ7FuQ&s"
+        alt="wireless headphones"
+      />
+      <h2>Wireless Headphones</h2>
+      <button>Buy Now</button>
+    </div>
+  </body>
+</html>
