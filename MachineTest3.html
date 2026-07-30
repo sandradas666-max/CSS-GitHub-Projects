@@ -1,11 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MachineTest3</title>
+    <style>
+      body{
+        margin:0;
+      }
+      .container {
+        
+        height: 100vh;
+        display: flex;
+        
+      }
+
+      .left {
+        width: 50%;
+        background:linear-gradient(to top,#f4ece9,#e3e4ff);
+      }
+
+      .right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form{
+        width:320px;
+        padding:30px;
+      }
+
+      h1{
+        color:brown;
+        font-family: arial,sans-serif;
+        margin-bottom: 25px;
+      }
+
+      label{
+        font-weight: bold;
+      }
+      input[type="email"],input[type="password"]{
+        width:100%;
+        padding:8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+      button{
+        width:250px;
+        padding:10px;
+        margin-top:15px;
+        background-color: #d46a4c;
+        color:white;
+        border:none;
+        cursor: pointer;
+      }
     
-</body>
+
+      @media (max-width:600px){
+        .left{
+            display:none;
+        }
+        .right{
+            width:100%;
+        }
+
+        form{
+          width:280px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left"></div>
+      <div class="right">
+        <form>
+          <h1>Login Form</h1>
+          <label>Email:</label><br>
+          <input type="email" />
+
+          <br /><br />
+
+          <label>Password:</label><br>
+          <input type="password" />
+
+          <br /><br />
+
+          <input type="checkbox" />
+          <label>Remember Me</label>
+
+          <br /><br />
+
+          <button>Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
